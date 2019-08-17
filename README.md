@@ -4,8 +4,10 @@
   * Riyadh Coding Club React Native Workshop.
   
 #### Other related repositories include:
-  * [React Native Material UI](https://github.com/xotahal/react-native-material-ui)
-  * [React Native Snap Carousel](https://github.com/archriss/react-native-snap-carousel?source=post_page)
+  * [React Native Paper](https://reactnativepaper.com/)
+  * [React Native Elements](https://react-native-training.github.io/react-native-elements/)
+  * [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+  * [React Navigation](https://reactnavigation.org/)
 
 
 ## Documentation
@@ -15,14 +17,15 @@ You can find the react native documentation at https://facebook.github.io/react-
 # Getting Started
 
 ## Build Prerequisites
-
-* npm@6.10.1
-* node@10.15.3
-* react@16.8.6
-* react-native@0.60.0
-* native-base@2.13.4
-* react-native-vector-icons@6.6.0
-* react-native-firebase@5.5.6
+  *  firebase": "^6.4.0",
+  *  react": "16.8.6",
+  *  react-native": "0.60.5",
+  *  react-native-dotenv": "^0.2.0",
+  *  react-native-elements": "^1.1.0",
+  *  react-native-gesture-handler": "^1.3.0",
+  *  react-native-paper": "^2.16.0",
+  *  react-native-vector-icons": "^6.6.0",
+  *  react-navigation": "^3.11.1"
 * Android Studio or Xcode setup for 
 the right version of OS. Check the documentation for more information [React Native](https://facebook.github.io/react-native/docs/getting-started).
 

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import { Appbar } from 'react-native-paper';
+import { Appbar, Button } from 'react-native-paper';
 import { FAB, Portal, Provider } from 'react-native-paper';
+import * as firebase from 'firebase';
 
 export default class Profile extends Component {
   state = {
@@ -9,9 +10,19 @@ export default class Profile extends Component {
     currentUser: null
   };
 
+  componentDidMount () {
+    // TODO: get the current user from firebase 
+
+    // TODO: set the state of the current user
+  }
+
+  handleLogout = () => {
+    // TODO: log user out signOut method
+
+  }
+
   render() {
 
-    const { currentUser } = this.state.currentUser;
 
     return (
       <Provider>
@@ -22,26 +33,19 @@ export default class Profile extends Component {
             />
           </Appbar.Header>
           <View
-            style={{justifyContent: "center", alignContent: "center"}}
+            style={{justifyContent: "center", alignContent: "center", marginTop: 200}}
           >
-            <Text>
-              {currentUser}
+            <Text
+              style={{fontSize: 36, fontStyle: "bold"}}
+            >
+            // TODO: show the user id of the current user
+
             </Text>
+            // TODO: log the user out pass the handleLogout method
+            <Button mode="contained" onPress={() => console.log('pressed')}>
+            Log Out
+            </Button>
           </View>
-          <FAB.Group
-            open={this.state.open}
-            icon={this.state.open ? 'today' : 'add'}
-            actions={[
-              { icon: 'event', label: 'Add Event', onPress: () => console.log('Pressed event') },
-              { icon: 'polymer', label: 'Add Project', onPress: () => console.log('Pressed notifications') },
-            ]}
-            onStateChange={({ open }) => this.setState({ open })}
-            onPress={() => {
-              if (this.state.open) {
-                // do something if the speed dial is open
-              }
-            }}
-          />
       </Portal>
    </Provider>
 

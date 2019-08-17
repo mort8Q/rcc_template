@@ -34,7 +34,7 @@ the right version of OS. Check the documentation for more information [React Nat
 
 * Downlaod the starter code
 ```shell
-git clone https://github.com/mort8Q/rcc_starter_code.git
+git clone https://github.com/mort8Q/rcc_template.git
 ```
 
 * Install dependencies
